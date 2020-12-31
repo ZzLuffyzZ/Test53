@@ -19,8 +19,8 @@ class Rank{
         this.club = Club
     }
     sortRank(){
-        for(i=0;i<Club.length<i++){
-            for(j=0;j<Club.length<j++){
+        for(i=0;i<Club.length;i++){
+            for(j=0;j<Club.length;j++){
                 if(Club[i].points>Club[j].points){
                     Club[i].position = Club.position[j];
                     Club[j].position = Club[i].position +1;
