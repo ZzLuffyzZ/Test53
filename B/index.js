@@ -33,7 +33,7 @@
 
             answers.push(
               `<label>
-                <input type="checkbox" name="question${questionNumber}" value="${answer}">
+                <input type="radio" name="question${questionNumber}" value="${answer}">
                 ${answer} :
                 ${currentQuestion.answers[answer]}
               </label>`
