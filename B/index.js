@@ -64,16 +64,20 @@
         if(userAnswer[i] === myQuestions[i].correctAnswer){
           numCorrect++;
   
-          answerContainers[questionNumber].style.color = 'lightgreen';
+          answerContainers[questionNumber].style.color = 'blue';
         }
         else{
           answerContainers[questionNumber].style.color = 'red';
         }}
       });
+        alert( `${numCorrect} out of ${myQuestions.length}`);
+        alert(`Correct answer is : 1: Leicester City,
+                            2: Lewis Hamilton,
+                            3:Germany,
+                            4:Don Cherry,
+                            5:Lewis Hamilton`)
   
-      
-      resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
-    }
+      }
   
     
     buildQuiz();
