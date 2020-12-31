@@ -1,13 +1,12 @@
-    let A1=[];
-    let A2=[]
-function mer(A1,A2){
+
+function mer(a,b){
     
-for(i=0,i<A1.length,i++){
-    for(j=0,j<A2.length,j++){
-        let B=[];
-        if(A1[i] != A2[j]){
-            B.push(A1[i]);
-            B.push(A2[j]);
+for(i=0;i<a.length;i++){
+    for(j=0;j<b.length;j++){
+        let c=[];
+        if(a[i] != b[j]){
+            c.push(a[i]);
+            c.push(b[j]);
         }
     }
 }}
