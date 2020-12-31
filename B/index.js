@@ -1,4 +1,3 @@
-(function(){
 
   const quizContainer = document.getElementById('quiz');
     const resultsContainer = document.getElementById('results');
@@ -60,16 +59,16 @@
   
         const answerContainer = answerContainers[questionNumber];
         const selector = `input[name=question${questionNumber}]:checked`;
-        const userAnswer = (answerContainer.querySelector(selector) || ``).value;
-  
-        if(userAnswer === myQuestion.correctAnswer){
+        const userAnswer = [(answerContainer.querySelector(selector) || ``).value];
+        for(let i=0;i<userAnswer.length;i++){
+        if(userAnswer[i] === myQuestions[i].correctAnswer){
           numCorrect++;
   
           answerContainers[questionNumber].style.color = 'lightgreen';
         }
         else{
           answerContainers[questionNumber].style.color = 'red';
-        }
+        }}
       });
   
       
@@ -79,6 +78,6 @@
     
     buildQuiz();
   
-    // Event listeners
+ 
     submitButton.addEventListener('click', showResults);
-})();
+};
